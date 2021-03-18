@@ -1,0 +1,20 @@
+<template>
+  <div
+    class="fb-page"
+    data-href="https://www.facebook.com/immaculataCodes"
+    data-tabs=""
+    data-width=""
+    data-height=""
+    data-small-header="false"
+    data-adapt-container-width="true"
+    data-hide-cover="false"
+    data-show-facepile="true"
+  >
+    <blockquote
+      cite="https://www.facebook.com/immaculataCodes"
+      class="fb-xfbml-parse-ignore"
+    >
+      <a href="https://www.facebook.com/immaculataCodes">Immaculata Codes</a>
+    </blockquote>
+  </div>
+</template>

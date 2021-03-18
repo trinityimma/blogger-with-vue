@@ -1,0 +1,73 @@
+.admin-wrapper {
+  height: calc(100vh - 66px);
+  display: flex;
+  background: #fff;
+  font-size: 1.1rem;
+}
+.admin-wrapper .left-sidebar {
+  flex: 60px;
+  height: 100%;
+  background: #234a57;
+}
+.admin-wrapper .left-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+}
+.admin-wrapper .left-sidebar ul li a {
+  padding: 18px;
+  display: block;
+  border-bottom: 1px solid #004044;
+}
+.admin-wrapper .left-sidebar ul li a:hover {
+  background: #004044;
+}
+.admin-wrapper .admin-content {
+  flex: 8;
+  height: 100%;
+  padding: 40px 100px 100px;
+  overflow: auto;
+}
+.admin-content .page-title {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+.admin-content .button-group a {
+  margin-right: 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+}
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #d3d3d3;
+}
+.edit {
+  color: green;
+}
+.delete {
+  color: red;
+}
+.publish {
+  color: blue;
+}
+.edit:hover,
+.delete:hover,
+.publish:hover {
+  text-decoration: underline;
+}
+.contents form div {
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 850) {
+  .admin-wrapper .admin-content {
+    padding: 40px 20px;
+    overflow: auto;
+  }
+}
