@@ -1,12 +1,4 @@
 <template>
-  <div class="button-group">
-    <router-link to="/admin/articles/create" class="btn btn-big"
-      >Add Post</router-link
-    >
-    <router-link to="/admin/articles" class="btn btn-big"
-      >Manage Articles</router-link
-    >
-  </div>
   <div class="contents">
     <h2 class="page-title">Add Article</h2>
     <form action="#" method="post">

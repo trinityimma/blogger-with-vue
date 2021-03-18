@@ -6,7 +6,8 @@ import Single from "./pages/BlogPost";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Admin from "./pages/admin/Home";
-import Articles from "./pages/admin/articles/Articles";
+import Article from "./pages/admin/articles/Article";
+import List from "./pages/admin/articles/List";
 import Create from "./pages/admin/articles/Create";
 import Update from "./pages/admin/articles/Update";
 import Users from "./pages/admin/users/Users";
@@ -23,13 +24,14 @@ const routes = [
   {
     path: "/admin",
     component: Admin,
+    redirect: '/admin/articles',
     children: [
       {
         path: "articles",
-        // component: Articles,
+        component: Article,
         children: [
+          { path: "", component: List },
           { path: "create", component: Create },
-          { path: "/", component: Articles },
           { path: "update", component: Update },
         ],
       },
