@@ -1,6 +1,6 @@
 <template>
   <div class="contents">
-    <h2 class="page-title">Add Topic</h2>
+    <h2 class="page-title">Update Topic</h2>
     <form action="#" method="post">
       <div>
         <label for="title">Name</label>
@@ -16,7 +16,7 @@
         ></textarea>
       </div>
       <div>
-        <button type="submit" class="btn btn-big">Add Topic</button>
+        <button type="submit" class="btn btn-big">Update Topic</button>
       </div>
     </form>
   </div>

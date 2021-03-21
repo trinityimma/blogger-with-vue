@@ -3,8 +3,8 @@
     <router-link to="/admin/articles/create" class="btn btn-big"
       >Add Article</router-link
     >
-    <router-link to="/admin/articles/update" class="btn btn-big"
-      >Manage Posts</router-link
+    <router-link to="/admin/articles" class="btn btn-big"
+      >Manage Articles</router-link
     >
 
     <router-view/>

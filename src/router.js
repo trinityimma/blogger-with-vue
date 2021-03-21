@@ -8,10 +8,16 @@ import Register from "./pages/Register";
 import Admin from "./pages/admin/Home";
 import Article from "./pages/admin/articles/Article";
 import List from "./pages/admin/articles/List";
-import Create from "./pages/admin/articles/Create";
-import Update from "./pages/admin/articles/Update";
+import CreateArticle from "./pages/admin/articles/Create";
+import UpdateArticle from "./pages/admin/articles/Update";
 import Users from "./pages/admin/users/Users";
+import UsersList from "./pages/admin/users/UsersList";
+import CreateUser from "./pages/admin/users/Create";
+import UpdateUser from "./pages/admin/users/Update";
 import Topics from "./pages/admin/topics/Topics";
+import TopicsList from "./pages/admin/topics/TopicsList";
+import CreateTopic from "./pages/admin/topics/Create";
+import UpdateTopic from "./pages/admin/topics/Update";
 import Messages from "./pages/admin/Messages";
 
 const routes = [
@@ -24,19 +30,36 @@ const routes = [
   {
     path: "/admin",
     component: Admin,
-    redirect: '/admin/articles',
+    redirect: "/admin/articles",
     children: [
       {
         path: "articles",
         component: Article,
         children: [
           { path: "", component: List },
-          { path: "create", component: Create },
-          { path: "update", component: Update },
+          { path: "create", component: CreateArticle },
+          { path: "update", component: UpdateArticle },
         ],
       },
-      { path: "users", component: Users },
-      { path: "topics", component: Topics },
+      {
+        path: "users",
+        component: Users,
+        children: [
+          { path: "", component: UsersList },
+          { path: "create", component: CreateUser },
+          { path: "update", component: UpdateUser },
+        ],
+      },
+      {
+        path: "topics",
+        component: Topics,
+        children: [
+          { path: "", component: TopicsList },
+          { path: "create", component: CreateTopic },
+          { path: "update", component: UpdateTopic },
+        ],
+      },
+
       { path: "messages", component: Messages },
     ],
   },

@@ -8,12 +8,12 @@
       </div>
       <div>
         <label for="body">Body</label>
-        <textarea
-          type="text"
-          name="body"
-          id="body"
+        <ckeditor
           class="text-input"
-        ></textarea>
+          :editor="editor"
+          v-model="editorData"
+          :config="editorConfig"
+        ></ckeditor>
       </div>
       <div class="">
         <label>Image</label>
@@ -35,7 +35,51 @@
 </template>
 
 <script>
-export default {};
+import CKEditor from "@ckeditor/ckeditor5-vue";
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+export default {
+  components: { ckeditor: CKEditor.component },
+  data() {
+    return {
+      editor: ClassicEditor,
+      editorData: "",
+      editorConfig: {
+        toolbar: [
+          "heading",
+          "|",
+          "bold",
+          "italic",
+          "link",
+          "bulletedList",
+          "numberedList",
+          "blockQuote",
+          "image",
+        ],
+        heading: {
+          options: [
+            {
+              model: "paragraph",
+              title: "Paragraph",
+              class: "ck-heading_paragraph",
+            },
+            {
+              model: "heading1",
+              view: "h1",
+              title: "Heading 1",
+              class: "ck-heading_heading1",
+            },
+            {
+              model: "heading2",
+              view: "h2",
+              title: "Heading 2",
+              class: "ck-heading_heading2",
+            },
+          ],
+        },
+      },
+    };
+  },
+};
 </script>
 
 <style></style>
