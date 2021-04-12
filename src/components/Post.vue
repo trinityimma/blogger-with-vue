@@ -1,23 +1,48 @@
 <template>
   <div class="post">
-    <img src="../assets/img/priest.jpg" class="post-image" alt="post image" />
+    <img :src="getImage(article.image)" class="post-image" alt="post image" />
     <div class="post-review">
       <h2>
-        <a href="single.html">The Holy bible and its value</a>
+        <router-link
+          :to="{
+            name: 'BlogPost',
+            params: { id: article.id },
+          }"
+          >{{ article.title }}</router-link
+        >
       </h2>
-      <i class="far fa-user">Immaculata</i>&nbsp;
-      <i class="far fa-calendar">Mar 11, 2021</i>
+      <i class="far fa-user">{{ article.author }}</i
+      >&nbsp;
+      <i class="far fa-calendar">{{ article.date }}</i>
       <p class="preview-text">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
-        inventore odit at consequuntur veritatis cumque?
+        {{ article.caption }}
       </p>
-      <a href="single.html" class="btn read-more">Read More</a>
+      <a @click.prevent="openArticle" class="btn read-more">Read More</a>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    article: {
+      type: Object,
+      required: true,
+      default: () => {
+        return {
+          title: "",
+          date: "",
+          caption: "",
+        };
+      },
+    },
+  },
+  methods: {
+    getImage(name) {
+      return require("@/assets/img/" + name);
+    },
+  },
+};
 </script>
 
 <style></style>

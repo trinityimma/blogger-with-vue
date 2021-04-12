@@ -20,7 +20,8 @@
   display: block;
   border-bottom: 1px solid #004044;
 }
-.admin-wrapper .left-sidebar ul li a:hover {
+.admin-wrapper .left-sidebar ul li a:hover,
+.admin-wrapper .left-sidebar ul li a.router-link-exact-active {
   background: #004044;
 }
 .admin-wrapper .admin-content {

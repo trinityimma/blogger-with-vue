@@ -24,9 +24,9 @@
             Contact
           </router-link>
         </li>
-        <!-- <li><a href="#">Sign Up</a></li>
-        <li><a href="#">Login</a></li> -->
-        <li>
+        <li v-if="!isLoggedIn"><a href="#">Sign Up</a></li>
+        <li v-if="!isLoggedIn"><a href="#" @click="setAuth(true)">Login</a></li>
+        <li v-if="isLoggedIn">
           <a href="#">
             <i class="fa fa-user"></i>
             Immaculata
@@ -34,7 +34,9 @@
           </a>
           <ul>
             <li><a href="#">Dashboard</a></li>
-            <li><a href="#" class="logout">Logout</a></li>
+            <li>
+              <a href="#" class="logout" @click="setAuth(false)">Logout</a>
+            </li>
           </ul>
         </li>
       </ul>
@@ -43,7 +45,21 @@
 </template>
 
 <script>
-
+export default {
+  data() {
+    return {};
+  },
+  methods: {
+    setAuth(payload) {
+      this.$store.commit("setIsLoggedIn", payload);
+    },
+  },
+  computed: {
+    isLoggedIn() {
+      return this.$store.state.isLoggedIn;
+    },
+  },
+};
 </script>
 
 <style>
@@ -95,15 +111,17 @@
   color: red;
 }
 .navbar ul li ul li a:hover {
-  background: #d5d6d6;
+  background: #dfe0e0;
 }
+
 .navbar ul li a {
   display: block;
   padding: 21px;
   font-size: 1.1em;
   text-decoration: none;
 }
-.navbar ul li a:hover {
+.navbar ul li a:hover,
+.navbar ul li a.router-link-exact-active {
   background: #006669;
   transition: 0.5s;
 }

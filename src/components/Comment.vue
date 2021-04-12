@@ -19,16 +19,18 @@
       <button type="submit" class="btn btn-big">Submit</button>
     </form>
     <div>
+      <h2 class>Comments on this article</h2>
+
       <div class="comment-container">
         <p>"<strong>Immaculata</strong>" <span>Mar 24, 2021</span></p>
         <div class="comment-text">Lorem ipsum dolor sit amet.</div>
       </div>
-      <div class="reply-container">
+      <!-- <div class="reply-container">
         <p>"<strong>Somto</strong>" <span>Mar 25, 2021</span></p>
         <div class="comment-text">
           Lorem ipsum dolor sit amet, orem ipsum dolor sit amet.
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="comment-container">
       <p>"<strong>Mmesoma</strong>" <span>Mar 25, 2021</span></p>
@@ -45,13 +47,13 @@ export default {};
 
 <style>
 .comment {
-  margin: 10px 0;
+  margin: 50px 0;
   background: lightgray;
-  border: 2px solid rgb(39, 36, 36);
+  border: 1px solid rgba(39, 36, 36,0.4 );
   padding: 20px;
 }
 .comment h2 {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .comment :is(input, textarea) {

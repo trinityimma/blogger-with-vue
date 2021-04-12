@@ -130,6 +130,8 @@ body {
   margin: 50px auto;
   padding-top: 40px;
   font-size: 1.1rem;
+  background: rgb(248, 246, 246);
+  text-align: center;
 }
 
 .contact-box {

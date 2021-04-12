@@ -1,0 +1,178 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Coding with Vuejs",
+      "slug": "Coding with Vuejs",
+      "date": "3/2/2021",
+      "image": "coding.jpg",
+      "author": "Mmeso",
+      "caption": "Frontend Development has never been so great since the introduction of framework like Vuejs ",
+      "content": "all about panama. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi vestibulum cursus quis eget orci. Aenean faucibus faucibus ex, a imperdiet nibh luctus faucibus. Mauris porttitor, velit ac eleifend mattis, sem justo accumsan odio, ut mattis nulla nulla eu nibh. Cras justo risus, sollicitudin eget nulla a, consequat convallis tortor. Fusce eget neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Sed aliquam nunc id lectus sagittis, ac elementum eros egestas. Aliquam sed tempor dui. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi vestibulum cursus quis eget orci. Aenean faucibus faucibus ex, a imperdiet nibh luctus faucibus. Mauris porttitor, velit ac eleifend mattis, sem justo accumsan odio, ut mattis nulla nulla eu nibh. Cras justo risus, sollicitudin eget nulla a, consequat convallis tortor. Fusce eget neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Sed aliquam nunc id lectus sagittis, ac elementum eros egestas. Aliquam sed tempor dui. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi vestibulum cursus quis eget orci. Aenean faucibus faucibus ex, a imperdiet nibh luctus faucibus. Mauris porttitor, velit ac eleifend mattis, sem justo accumsan odio, ut mattis nulla nulla eu nibh. Cras justo risus, sollicitudin eget nulla a, consequat convallis tortor. Fusce eget neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Sed aliquam nunc id lectus sagittis, ac elementum eros egestas. Aliquam sed tempor dui.",
+      "commentId": ["g1k2l3", "v1x2z3"]
+    },
+    {
+      "id": 2,
+      "title": "The value of reading the Holy bible",
+      "slug": "The value of reading the Holy bible",
+      "date": "3/2/2021",
+      "image": "bible.jpg",
+      "author": "Immaculata",
+      "caption": "The value of Holy bible can never been underated. It entails a lot of lessons and spiritual benefits. ",
+      "content": "all about panama. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi vestibulum cursus quis eget orci. Aenean faucibus faucibus ex, a imperdiet nibh luctus faucibus. Mauris porttitor, velit ac eleifend mattis, sem justo accumsan odio, ut mattis nulla nulla eu nibh. Cras justo risus, sollicitudin eget nulla a, consequat convallis tortor. Fusce eget neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Sed aliquam nunc id lectus sagittis, ac elementum eros egestas. Aliquam sed tempor dui. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi vestibulum cursus quis eget orci. Aenean faucibus faucibus ex, a imperdiet nibh luctus faucibus. Mauris porttitor, velit ac eleifend mattis, sem justo accumsan odio, ut mattis nulla nulla eu nibh. Cras justo risus, sollicitudin eget nulla a, consequat convallis tortor. Fusce eget neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Sed aliquam nunc id lectus sagittis, ac elementum eros egestas. Aliquam sed tempor dui. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi vestibulum cursus quis eget orci. Aenean faucibus faucibus ex, a imperdiet nibh luctus faucibus. Mauris porttitor, velit ac eleifend mattis, sem justo accumsan odio, ut mattis nulla nulla eu nibh. Cras justo risus, sollicitudin eget nulla a, consequat convallis tortor. Fusce eget neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Sed aliquam nunc id lectus sagittis, ac elementum eros egestas. Aliquam sed tempor dui.",
+      "comments": ["a1b2c3"]
+    },
+    {
+      "id": 3,
+      "title": "Man's best friends or man's child?",
+      "slug": "Man's best friends or man's child?",
+      "date": "3/2/2021",
+      "author": "Kosi",
+      "image": "dogs.jpg",
+      "caption": "All know that dogs have been regarded as man's best friends, but in recent times we have seen people taking it beyond pets and regarding them as children.",
+      "content": "all about panama. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi vestibulum cursus quis eget orci. Aenean faucibus faucibus ex, a imperdiet nibh luctus faucibus. Mauris porttitor, velit ac eleifend mattis, sem justo accumsan odio, ut mattis nulla nulla eu nibh. Cras justo risus, sollicitudin eget nulla a, consequat convallis tortor. Fusce eget neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Sed aliquam nunc id lectus sagittis, ac elementum eros egestas. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi vestibulum cursus quis eget orci. Aenean faucibus faucibus ex, a imperdiet nibh luctus faucibus. Mauris porttitor, velit ac eleifend mattis, sem justo accumsan odio, ut mattis nulla nulla eu nibh. Cras justo risus, sollicitudin eget nulla a, consequat convallis tortor. Fusce eget neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Sed aliquam nunc id lectus sagittis, ac elementum eros egestas. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi vestibulum cursus quis eget orci. Aenean faucibus faucibus ex, a imperdiet nibh luctus faucibus. Mauris porttitor, velit ac eleifend mattis, sem justo accumsan odio, ut mattis nulla nulla eu nibh. Cras justo risus, sollicitudin eget nulla a, consequat convallis tortor. Fusce eget neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Sed aliquam nunc id lectus sagittis, ac elementum eros egestas. Aliquam sed tempor dui. Aliquam sed tempor dui. Aliquam sed tempor dui.",
+      "comments": ["n1o2p3"]
+    },
+    {
+      "id": 4,
+      "title": "The healing power of nature!",
+      "slug": "The healing power of nature!",
+      "date": "18/2/2021",
+      "image": "nature.jpg",
+      "author": "Immaculata",
+      "caption": "Do you feel depressed, or stress, do you feel that the world is on your shoulders? Then you need the healing power of nature. Come aside  ",
+      "content": "all about panama. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi vestibulum cursus quis eget orci. Aenean faucibus faucibus ex, a imperdiet nibh luctus faucibus. Mauris porttitor, velit ac eleifend mattis, sem justo accumsan odio, ut mattis nulla nulla eu nibh. Cras justo risus, sollicitudin eget nulla a, consequat convallis tortor. Fusce eget neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Sed aliquam nunc id lectus sagittis, ac elementum eros egestas. Aliquam sed tempor dui.",
+      "comments": ["f1g2h3", "i1j2k3"]
+    },
+    {
+      "id": 5,
+      "title": "Confidence in oneself",
+      "slug": "Confidence in oneself",
+      "date": "20/3/2021",
+      "image": "confidence.jpg",
+      "author": "Immaculata",
+      "caption": "If we can have confidence in ourselves, then nothing can stop us. Keep on reading to see how to confide in yourself",
+      "content": "all about panama. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi vestibulum cursus quis eget orci. Aenean faucibus faucibus ex, a imperdiet nibh luctus faucibus. Mauris porttitor, velit ac eleifend mattis, sem justo accumsan odio, ut mattis nulla nulla eu nibh. Cras justo risus, sollicitudin eget nulla a, consequat convallis tortor. Fusce eget neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Sed aliquam nunc id lectus sagittis, ac elementum eros egestas. Aliquam sed tempor dui.",
+      "comments": ["q1r2s3"]
+    },
+    {
+      "id": 6,
+      "title": "The Holy Mass and its value",
+      "slug": "The Holy Mass and its value",
+      "date": "25/3/2021",
+      "image": "priest.jpg",
+      "author": "Immaculata",
+      "caption": "The Holy Mass is the greatest prayer one can ever say. It has a great value and of importance to the world",
+      "content": "all about panama. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi vestibulum cursus quis eget orci. Aenean faucibus faucibus ex, a imperdiet nibh luctus faucibus. Mauris porttitor, velit ac eleifend mattis, sem justo accumsan odio, ut mattis nulla nulla eu nibh. Cras justo risus, sollicitudin eget nulla a, consequat convallis tortor. Fusce eget neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Sed aliquam nunc id lectus sagittis, ac elementum eros egestas. Aliquam sed tempor dui.",
+      "comments": ["b1c2d3", "c1d2e3"]
+    }
+  ],
+  "users": [
+    {
+      "username": "Immaculata",
+      "name": "Immaculata Muoghalu",
+      "email": "trinityimma@gmail.com",
+      "password": "It@01994",
+      "phoneNumber": "+2348100671990",
+      "articles": [6, 5, 4, 2],
+      "role": "admin"
+    },
+    {
+      "username": "Mmeso",
+      "name": "Mmesoma Muoghalu",
+      "email": "juliet@gmail.com",
+      "password": "It@2004",
+      "phoneNumber": "+2348100671990",
+      "articles": [1],
+      "role": "author"
+    },
+    {
+      "username": "Kosi",
+      "name": "Kosiso Muoghalu",
+      "email": "kosi@gmail.com",
+      "password": "It@2006",
+      "phoneNumber": "+2348100671990",
+      "articles": [3],
+      "role": "author"
+    }
+  ],
+  "topics": [
+    {
+      "name": "Technology",
+      "description": "Articles relationg to technologies"
+    },
+    {
+      "name": "Travel",
+      "description": "Articles relationg to travel"
+    },
+    {
+      "name": "Poets",
+      "description": "Articles relationg to peoms"
+    },
+    {
+      "name": "Lifestyle",
+      "description": "Articles relationg to social lifestyle, social life and other"
+    },
+    {
+      "name": "Religion",
+      "description": "Articles relationg to religion"
+    }
+  ],
+  "comments": [
+    {
+      "id": "a1b2c3",
+      "name": "Anthony",
+      "comment": "I feel so much elevated after going to Holy Mass."
+    },
+    {
+      "id": "b1c2d3",
+      "name": "Anne",
+      "comment": "In Mass, I feel like I'm in heaven."
+    },
+    {
+      "id": "c1d2e3",
+      "name": "Gloria",
+      "comment": "The Holy Mass is the greates treasure of the church and I am happy to be part of the church."
+    },
+    {
+      "id": "f1g2h3",
+      "name": "Amarachi",
+      "comment": "Do you have any great place to recomment."
+    },
+    {
+      "id": "i1j2k3",
+      "name": "Immaculata",
+      "comment": "@Amarachi I know of a place in Enugu you can try"
+    },
+    {
+      "id": "l1m2n3",
+      "name": "Anthony",
+      "comment": "I feel so much elevated after going to Holy Mass."
+    },
+    {
+      "id": "n1o2p3",
+      "name": "Anne",
+      "comment": "In Mass, I feel like I'm in heaven."
+    },
+    {
+      "id": "q1r2s3",
+      "name": "Gloria",
+      "comment": "The Holy Mass is the greates treasure of the church and I am happy to be part of the church."
+    },
+    {
+      "id": "g1k2l3",
+      "name": "Raymond",
+      "comment": "Thanks for the post."
+    },
+    {
+      "id": "a1q3t4",
+      "name": "Mara",
+      "comment": "This post has really inspired me. Thank you!"
+    },
+    {
+      "id": "v1x2z3",
+      "name": "John",
+      "comment": "Thanks for the post."
+    }
+  ]
+}

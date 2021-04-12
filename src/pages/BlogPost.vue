@@ -7,8 +7,8 @@
          
         </div> -->
         <div class="main-content single">
-          <h1 class="post-title">This is the title of the Post</h1>
-          <div class="post-content">
+          <h1 class="post-title">{{ post.title }}</h1>
+          <!-- <div class="post-content">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem est
               consectetur provident aspernatur, voluptatem laborum.
@@ -72,7 +72,8 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Temporibus, odit.
             </p>
-          </div>
+          </div> -->
+          <div class="post-content">{{ post.content }}</div>
           <Comment />
         </div>
         <aside class="sidebar single">
@@ -93,9 +94,28 @@ import SidebarPost from "../components/SidebarPost";
 import Topics from "../components/Topics";
 import FacebookPlugin from "../components/FacebookPlugin";
 import Comment from "../components/Comment";
+import axios from "../plugins/axios";
 
 export default {
   components: { Navbar, Footer, SidebarPost, Topics, Comment, FacebookPlugin },
+  // props: {
+  //   blog,
+  // },
+  data() {
+    return {
+      post: {},
+    };
+  },
+  computed: {
+    postId() {
+      return this.$route.params.id;
+    },
+  },
+  mounted() {
+    axios.get(`articles/${this.postId}`).then((response) => {
+      this.post = response.data;
+    });
+  },
 };
 </script>
 

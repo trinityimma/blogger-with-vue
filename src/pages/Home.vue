@@ -6,9 +6,11 @@
       <div class="content">
         <div class="main-content">
           <h1 class="recent-post-title">Recent Posts</h1>
-          <Post />
-          <Post />
-          <Post />
+          <Post
+            v-for="article in articles"
+            :key="article.id"
+            :article="article"
+          />
         </div>
         <aside class="sidebar">
           <HomeSidebar />
@@ -24,9 +26,19 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Post from "../components/Post";
 import HomeSidebar from "../components/HomeSidebar";
+import axios from "../plugins/axios";
 
 export default {
   components: { Navbar, Footer, Post, HomeSidebar },
+  data() {
+    return {
+      articles: {},
+    };
+  },
+  async mounted() {
+    const { data } = await axios.get("/articles");
+    this.articles = data;
+  },
 };
 </script>
 
