@@ -24,7 +24,7 @@
             </router-link>
           </td>
           <td>
-            <a @click.prevent="deleteArticle($articleIndex)" class="delete">
+            <a @click.prevent="deleteArticle(article)" class="delete">
               delete
             </a>
           </td>
@@ -35,17 +35,19 @@
 </template>
 
 <script>
-// import { mapState } from "vuex";
 export default {
   computed: {
-    // ...mapState(['articles'])
     articles() {
       return this.$store.getters["articlesModule/getAllArticles"];
     },
   },
   created() {
-    // this.$store.dispatch("fetchArticles");
     this.$store.dispatch("articlesModule/fetchArticles");
+  },
+  methods: {
+    deleteArticle(article) {
+      this.$store.dispatch("articlesModule/deleteArticle", article);
+    },
   },
 };
 </script>

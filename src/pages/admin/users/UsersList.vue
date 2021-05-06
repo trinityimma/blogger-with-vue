@@ -10,18 +10,19 @@
       </thead>
       <tbody>
         <tr v-for="(user, index) in users" :key="user.id">
-          <td>{{index + 1}}</td>
-          <td>{{user.name}}</td>
-          <td>{{user.role}}</td>
+          <td>{{ index + 1 }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.role }}</td>
           <td><a href="#" class="edit">edit </a></td>
-          <td><a href="#" class="delete">delete </a></td>
+          <td>
+            <a @click.prevent="deleteUser(user)" class="delete">delete </a>
+          </td>
         </tr>
       </tbody>
     </table>
   </div>
 </template>
 <script>
-
 export default {
   computed: {
     users() {
@@ -30,6 +31,11 @@ export default {
   },
   created() {
     this.$store.dispatch("userModule/fetchUsers");
+  },
+  methods: {
+    deleteUser(user) {
+      this.$store.dispatch("userModule/deleteUser", user);
+    },
   },
 };
 </script>

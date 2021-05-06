@@ -97,15 +97,19 @@ export default {
     };
   },
   computed: {
-    // article() {
-    //   return this.$store.getters["articlesModule/getArticle", this.$route.params.id];
-    // },
+    article() {
+      return this.$store.getters[
+        ("articlesModule/getArticle", this.$route.params.id)
+      ];
+    },
     topics() {
       return this.$store.getters["topicModule/getAllTopics"];
     },
   },
   methods: {
-    createArticl() {},
+    updateArticle() {
+      this.$store.dispatch("articlesModule/updateArticle", this.article);
+    },
   },
   mounted() {
     const article = this.$store.getters[
