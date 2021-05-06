@@ -59,7 +59,8 @@ const routes = [
               ),
           },
           {
-            path: "update",
+            path: "/update/:id",
+            name: "UpdateArticle",
             component: () =>
               import(
                 /* webpackChunkName: "articles" */ "./pages/admin/articles/Update"

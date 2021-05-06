@@ -11,13 +11,21 @@
           >{{ article.title }}</router-link
         >
       </h2>
-      <i class="far fa-user">{{ article.author }}</i
+      <i class="far fa-user"> {{ ` ${article.author}` }}</i
       >&nbsp;
-      <i class="far fa-calendar">{{ article.date }}</i>
+      <i class="far fa-calendar"> {{ ` ${article.createdAt}` }}</i>
       <p class="preview-text">
         {{ article.caption }}
       </p>
-      <a @click.prevent="openArticle" class="btn read-more">Read More</a>
+      <router-link
+        class="btn read-more"
+        :to="{
+          name: 'BlogPost',
+          params: { id: article.id },
+        }"
+        >Read More</router-link
+      >
+      <!-- <a @click.prevent="openArticle" class="btn read-more">Read More</a> -->
     </div>
   </div>
 </template>

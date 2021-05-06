@@ -9,17 +9,10 @@
         <th colspan="2">Action</th>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>trinityima</td>
-          <td>Author</td>
-          <td><a href="#" class="edit">edit </a></td>
-          <td><a href="#" class="delete">delete </a></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Immaculata</td>
-          <td>Admin</td>
+        <tr v-for="(user, index) in users" :key="user.id">
+          <td>{{index + 1}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.role}}</td>
           <td><a href="#" class="edit">edit </a></td>
           <td><a href="#" class="delete">delete </a></td>
         </tr>
@@ -27,3 +20,16 @@
     </table>
   </div>
 </template>
+<script>
+
+export default {
+  computed: {
+    users() {
+      return this.$store.getters["userModule/getAllUsers"];
+    },
+  },
+  created() {
+    this.$store.dispatch("userModule/fetchUsers");
+  },
+};
+</script>

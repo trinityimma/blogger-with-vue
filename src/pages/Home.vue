@@ -26,18 +26,20 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Post from "../components/Post";
 import HomeSidebar from "../components/HomeSidebar";
-import axios from "../plugins/axios";
 
 export default {
   components: { Navbar, Footer, Post, HomeSidebar },
   data() {
-    return {
-      articles: {},
-    };
+    return {};
   },
-  async mounted() {
-    const { data } = await axios.get("/articles");
-    this.articles = data;
+  computed: {
+    // ...mapState(['articles'])
+    articles() {
+      return this.$store.getters["articlesModule/getAllArticles"];
+    },
+  },
+  mounted() {
+    this.$store.dispatch("articlesModule/fetchArticles");
   },
 };
 </script>

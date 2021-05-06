@@ -9,25 +9,25 @@
         <th colspan="3">Action</th>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>This is the first post</td>
-          <td>Immaculata</td>
+        <tr v-for="(article, $articleIndex) in articles" :key="article.id">
+          <td>{{ $articleIndex + 1 }}</td>
+          <td>{{ article.title }}</td>
+          <td>{{ article.author }}</td>
           <td>
-            <router-link to="/admin/articles/update" class="edit"
+            <router-link
+              :to="{
+                name: 'UpdateArticle',
+                params: { id: article.id },
+              }"
+              class="edit"
               >edit
             </router-link>
           </td>
-          <td><a href="#" class="delete">delete </a></td>
-          <td><a href="#" class="publish">publish </a></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>This is the second post</td>
-          <td>Fabian</td>
-          <td><a href="#" class="edit">edit </a></td>
-          <td><a href="#" class="delete">delete </a></td>
-          <td><a href="#" class="publish">publish </a></td>
+          <td>
+            <a @click.prevent="deleteArticle($articleIndex)" class="delete">
+              delete
+            </a>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -35,7 +35,19 @@
 </template>
 
 <script>
-export default {};
+// import { mapState } from "vuex";
+export default {
+  computed: {
+    // ...mapState(['articles'])
+    articles() {
+      return this.$store.getters["articlesModule/getAllArticles"];
+    },
+  },
+  created() {
+    // this.$store.dispatch("fetchArticles");
+    this.$store.dispatch("articlesModule/fetchArticles");
+  },
+};
 </script>
 
 <style></style>

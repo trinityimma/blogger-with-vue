@@ -1,10 +1,19 @@
 <template>
   <div class="contents">
     <h2 class="page-title">Update Article</h2>
-    <form action="#" method="post">
+    <form @submit.prevent="createArticle()" method="post">
       <div>
         <label for="title">Title</label>
-        <input type="text" name="title" class="text-input" />
+        <input type="text" name="title" class="text-input" v-model="title" />
+      </div>
+      <div>
+        <label for="title">Caption</label>
+        <input
+          type="text"
+          name="caption"
+          class="text-input"
+          v-model="caption"
+        />
       </div>
       <div>
         <label for="body">Body</label>
@@ -21,14 +30,16 @@
       </div>
       <div>
         <label for="topic">Topic</label>
-        <select name="topic" class="text-input">
+        <select name="topic" class="text-input" v-model="selectedTopic">
           <option value="Travel">Travel</option>
           <option value="Coding">Coding</option>
           <option value="Poetty">Poetry</option>
         </select>
       </div>
       <div>
-        <button type="submit" class="btn btn-big">Update</button>
+        <button type="submit" class="btn btn-big">
+          Update
+        </button>
       </div>
     </form>
   </div>
@@ -41,6 +52,12 @@ export default {
   components: { ckeditor: CKEditor.component },
   data() {
     return {
+      title: "",
+      image: "",
+      caption: "",
+      createdAt: new Date(),
+      selectedTopic: "",
+      success: "",
       editor: ClassicEditor,
       editorData: "",
       editorConfig: {
@@ -78,6 +95,26 @@ export default {
         },
       },
     };
+  },
+  computed: {
+    // article() {
+    //   return this.$store.getters["articlesModule/getArticle", this.$route.params.id];
+    // },
+    topics() {
+      return this.$store.getters["topicModule/getAllTopics"];
+    },
+  },
+  methods: {
+    createArticl() {},
+  },
+  mounted() {
+    const article = this.$store.getters[
+      ("articlesModule/getArticle", this.$route.params.id)
+    ];
+    this.title = article.title;
+    this.selectedTopic = article.topic;
+    this.caption = article.caption;
+    this.editorData = article.content;
   },
 };
 </script>

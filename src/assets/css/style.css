@@ -113,7 +113,7 @@ a {
 }
 .content .main-content .post {
   width: 95%;
-  min-height: 250px;
+  height: 250px;
   margin: 20px auto;
   border-radius: 5px;
   background: white;

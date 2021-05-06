@@ -3,11 +3,8 @@
   <div class="body-wrapper">
     <div class="page-wrapper">
       <div class="content">
-        <!-- <div class="main-content-wrapper">
-         
-        </div> -->
         <div class="main-content single">
-          <h1 class="post-title">{{ post.title }}</h1>
+          <h1 class="post-title">{{ article.title }}</h1>
           <!-- <div class="post-content">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem est
@@ -73,7 +70,7 @@
               Temporibus, odit.
             </p>
           </div> -->
-          <div class="post-content">{{ post.content }}</div>
+          <div class="post-content">{{ article.content }}</div>
           <Comment />
         </div>
         <aside class="sidebar single">
@@ -98,12 +95,9 @@ import axios from "../plugins/axios";
 
 export default {
   components: { Navbar, Footer, SidebarPost, Topics, Comment, FacebookPlugin },
-  // props: {
-  //   blog,
-  // },
   data() {
     return {
-      post: {},
+      article: {},
     };
   },
   computed: {
@@ -113,7 +107,7 @@ export default {
   },
   mounted() {
     axios.get(`articles/${this.postId}`).then((response) => {
-      this.post = response.data;
+      this.article = response.data;
     });
   },
 };

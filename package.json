@@ -12,6 +12,7 @@
     "@ckeditor/ckeditor5-vue": "^2.0.1",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "es6-promise": "^4.2.8",
     "vue": "^3.0.0",
     "vue-router": "^4.0.4",
     "vuex": "^4.0.0"

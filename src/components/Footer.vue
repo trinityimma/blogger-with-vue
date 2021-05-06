@@ -2,9 +2,9 @@
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-section about">
-        <h1 class="logo-text">Blooger</h1>
+        <h1 class="logo-text">Blogger</h1>
         <p>
-          Blooger is a fictional blog for the purpose of mastering vuejs by
+          Blogger is a fictional blog for the purpose of mastering vuejs by
           transitioning from vanilla javascript to vuejs. See me in two months
           time as a vuejs master by God's grace.
         </p>
